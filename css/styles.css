@@ -1,0 +1,140 @@
+/* Color Palette */
+
+:root {
+    --palette-navy: #1A3263;
+    --palette-red: #c80707;
+    --palette-black: #1B281B;
+    --palette-bluegray: #547792;
+}
+
+/* CSS Reset */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Text Properties */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    color: var(--palette-black);
+    background-color: lightblue;
+}
+
+h1 {
+    font-size: 5rem;
+    color: var(--palette-navy);
+    text-align: center;
+}
+@media (width < 738px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+    color: var(--palette-red);
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--palette-black);
+    text-align: center;
+}
+
+.bluegray-text {
+    color: var(--palette-bluegray);
+}
+.red-text {
+    color: var(--palette-red);
+}
+
+p{
+    text-align: center;
+}
+
+main ul {
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.work-experience-list,
+.work-exp-p,
+.project-p,
+.hobbies,
+.contact-info,
+.education,
+.personal-p,
+.work-experience-description,
+.project-description,
+.project-list {
+    border: 2px solid var(--palette-black);
+    padding: 30px;
+    margin: 10px;
+    background-color: lightcoral;
+    color: var(--palette-black);
+}
+
+/* Wrapper */
+
+.wrapper {
+    max-inline-size: 800px;
+    margin-inline: auto;
+}
+
+/* Images */
+
+.picture {
+    inline-size: 100%;
+    border: 2px solid var(--palette-black);
+    
+}
+.hobby-image {
+    inline-size: 100%;
+    margin-top: 20px;
+    border: 2px solid var(--palette-black);
+}
+
+/* Links */
+
+a {
+    color: var(--palette-bluegray);
+    /* background-color: yellow; */
+    /* padding-inline: 10px; */
+    /* display: block; */
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--palette-red);
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: var(--palette-bluegray);
+    color: white;
+    padding: 10px;
+    border: 2px solid var(--palette-black);
+}
