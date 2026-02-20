@@ -44,6 +44,7 @@ h3 {
     font-size: 2rem;
     color: var(--palette-black);
     text-align: center;
+    overflow-wrap: break-word;
 }
 
 .bluegray-text {
@@ -119,6 +120,7 @@ nav a {
 
 a {
     color: var(--palette-bluegray);
+    overflow-wrap: break-word;
     /* background-color: yellow; */
     /* padding-inline: 10px; */
     /* display: block; */
